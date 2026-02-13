@@ -444,20 +444,19 @@
         animation-delay: calc(var(--bloomDelay) + 1.15s);
       }
       @keyframes leafPop {
-  0% {
-    transform: scale(0.14);
-    opacity: 0;
-  }
-  65% {
-    transform: scale(1.06);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1; /* <-- KEEP LEAVES VISIBLE */
-  }
-}
-
+        0% {
+          transform: scale(0.14);
+          opacity: 0;
+        }
+        65% {
+          transform: scale(1.06);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1; /* <-- KEEP LEAVES VISIBLE */
+        }
+      }
 
       .head {
         transform-origin: 50% 60%;
@@ -519,21 +518,125 @@
       }
 
       /* ===== TOP 6 RED roses ===== */
-      .red1 { --x: calc(-28vmin); --y: calc(-30vmin); --s: 0.95; --tilt: -10deg; --sd: -0.2s; --bloomDelay: 0s; --z: 4; }
-      .red2 { --x: calc(-18vmin); --y: calc(-34vmin); --s: 0.98; --tilt: 6deg;  --sd: -0.25s; --bloomDelay: 0.2s; --z: 5; }
-      .red3 { --x: calc(-6vmin);  --y: calc(-37vmin); --s: 1.02; --tilt: -4deg; --sd: -0.2s; --bloomDelay: 0.4s; --z: 6; }
-      .red4 { --x: calc(6vmin);   --y: calc(-37vmin); --s: 1.02; --tilt: 4deg;  --sd: -0.2s; --bloomDelay: 0.6s; --z: 6; }
-      .red5 { --x: calc(18vmin);  --y: calc(-34vmin); --s: 0.98; --tilt: -6deg; --sd: -0.25s; --bloomDelay: 0.8s; --z: 5; }
-      .red6 { --x: calc(28vmin);  --y: calc(-30vmin); --s: 0.95; --tilt: 10deg; --sd: -0.2s; --bloomDelay: 1s; --z: 4; }
+      .red1 {
+        --x: calc(-28vmin);
+        --y: calc(-30vmin);
+        --s: 0.95;
+        --tilt: -10deg;
+        --sd: -0.2s;
+        --bloomDelay: 0s;
+        --z: 4;
+      }
+      .red2 {
+        --x: calc(-18vmin);
+        --y: calc(-34vmin);
+        --s: 0.98;
+        --tilt: 6deg;
+        --sd: -0.25s;
+        --bloomDelay: 0.2s;
+        --z: 5;
+      }
+      .red3 {
+        --x: calc(-6vmin);
+        --y: calc(-37vmin);
+        --s: 1.02;
+        --tilt: -4deg;
+        --sd: -0.2s;
+        --bloomDelay: 0.4s;
+        --z: 6;
+      }
+      .red4 {
+        --x: calc(6vmin);
+        --y: calc(-37vmin);
+        --s: 1.02;
+        --tilt: 4deg;
+        --sd: -0.2s;
+        --bloomDelay: 0.6s;
+        --z: 6;
+      }
+      .red5 {
+        --x: calc(18vmin);
+        --y: calc(-34vmin);
+        --s: 0.98;
+        --tilt: -6deg;
+        --sd: -0.25s;
+        --bloomDelay: 0.8s;
+        --z: 5;
+      }
+      .red6 {
+        --x: calc(28vmin);
+        --y: calc(-30vmin);
+        --s: 0.95;
+        --tilt: 10deg;
+        --sd: -0.2s;
+        --bloomDelay: 1s;
+        --z: 4;
+      }
 
       /* ===== 7 PINK roses ===== */
-      .r1 { --x: calc(-24vmin); --y: calc(-15vmin); --s: 0.95; --tilt: -10deg; --sd: -0.2s; --bloomDelay: 1.2s; --z: 6; }
-      .r2 { --x: calc(-10vmin); --y: calc(-18vmin); --s: 1.05; --tilt: 7deg;  --sd: -0.3s; --bloomDelay: 1.6s; --z: 12; }
-      .r3 { --x: calc(10vmin);  --y: calc(-18vmin); --s: 1.05; --tilt: -7deg; --sd: -0.2s; --bloomDelay: 2s;   --z: 11; }
-      .r4 { --x: calc(-30vmin); --y: calc(-2vmin);  --s: 0.9;  --tilt: 12deg; --sd: -0.2s; --bloomDelay: 2.4s; --z: 10; }
-      .r5 { --x: calc(30vmin);  --y: calc(-2vmin);  --s: 0.9;  --tilt: -12deg;--sd: -0.2s; --bloomDelay: 2.8s; --z: 8; }
-      .r6 { --x: calc(0vmin);   --y: calc(5vmin);   --s: 1.15; --tilt: 0deg;  --sd: -0.35s;--bloomDelay: 3.2s; --z: 14; }
-      .r7 { --x: calc(0vmin);   --y: calc(20vmin);  --s: 1.2;  --tilt: 0deg;  --sd: -0.35s;--bloomDelay: 3.6s; --z: 15; }
+      .r1 {
+        --x: calc(-24vmin);
+        --y: calc(-15vmin);
+        --s: 0.95;
+        --tilt: -10deg;
+        --sd: -0.2s;
+        --bloomDelay: 1.2s;
+        --z: 6;
+      }
+      .r2 {
+        --x: calc(-10vmin);
+        --y: calc(-18vmin);
+        --s: 1.05;
+        --tilt: 7deg;
+        --sd: -0.3s;
+        --bloomDelay: 1.6s;
+        --z: 12;
+      }
+      .r3 {
+        --x: calc(10vmin);
+        --y: calc(-18vmin);
+        --s: 1.05;
+        --tilt: -7deg;
+        --sd: -0.2s;
+        --bloomDelay: 2s;
+        --z: 11;
+      }
+      .r4 {
+        --x: calc(-30vmin);
+        --y: calc(-2vmin);
+        --s: 0.9;
+        --tilt: 12deg;
+        --sd: -0.2s;
+        --bloomDelay: 2.4s;
+        --z: 10;
+      }
+      .r5 {
+        --x: calc(30vmin);
+        --y: calc(-2vmin);
+        --s: 0.9;
+        --tilt: -12deg;
+        --sd: -0.2s;
+        --bloomDelay: 2.8s;
+        --z: 8;
+      }
+      .r6 {
+        --x: calc(0vmin);
+        --y: calc(5vmin);
+        --s: 1.15;
+        --tilt: 0deg;
+        --sd: -0.35s;
+        --bloomDelay: 3.2s;
+        --z: 14;
+      }
+      .r7 {
+        --x: calc(0vmin);
+        --y: calc(20vmin);
+        --s: 1.2;
+        --tilt: 0deg;
+        --sd: -0.35s;
+        --bloomDelay: 3.6s;
+        --z: 15;
+      }
 
       .caption {
         position: absolute;
@@ -574,6 +677,53 @@
         .innerOpen {
           opacity: 1 !important;
           transform: none !important;
+        }
+      }
+
+      /* ===== CLICK + HOVER EFFECTS (ADDED) ===== */
+
+      /* allow hover/click on each flower */
+      .roseUnit {
+        pointer-events: auto; /* overrides your current pointer-events:none */
+      }
+
+      /* glow on hover (desktop/laptop) */
+      @media (hover: hover) and (pointer: fine) {
+        .roseUnit {
+          transition:
+            filter 220ms ease,
+            transform 220ms ease;
+        }
+
+        .roseUnit:hover {
+          filter: drop-shadow(0 0 10px rgba(255, 120, 180, 0.55))
+            drop-shadow(0 0 22px rgba(255, 80, 150, 0.35));
+        }
+      }
+
+      /* click animation */
+      .roseUnit.flower-pop {
+        animation: flowerPop 520ms cubic-bezier(0.16, 1, 0.3, 1);
+        filter: drop-shadow(0 0 12px rgba(255, 120, 180, 0.65))
+          drop-shadow(0 0 28px rgba(255, 80, 150, 0.45));
+      }
+
+      @keyframes flowerPop {
+        0% {
+          transform: translate(-50%, -50%) translate(var(--x), var(--y))
+            scale(var(--s)) rotate(var(--tilt));
+        }
+        35% {
+          transform: translate(-50%, -50%) translate(var(--x), var(--y))
+            scale(calc(var(--s) * 1.12)) rotate(calc(var(--tilt) + 1deg));
+        }
+        70% {
+          transform: translate(-50%, -50%) translate(var(--x), var(--y))
+            scale(calc(var(--s) * 0.98)) rotate(calc(var(--tilt) - 1deg));
+        }
+        100% {
+          transform: translate(-50%, -50%) translate(var(--x), var(--y))
+            scale(var(--s)) rotate(var(--tilt));
         }
       }
     </style>
@@ -628,13 +778,18 @@
         </div>
 
         <div class="caption">
-          Happy Valentine's Day <span>• Katrina Selomin • February 14, 2026</span>
+          Happy Valentine's Day
+          <span>• Katrina Selomin • February 14, 2026</span>
         </div>
       </div>
 
       <!-- STEM+LEAVES -->
       <template id="roseStem">
-        <svg viewBox="0 0 220 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg
+          viewBox="0 0 220 330"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
           <g class="stemGrow">
             <path
               d="M112 312 C110 270, 114 235, 114 200 C114 160, 116 132, 114 110"
@@ -659,7 +814,11 @@
 
       <!-- PINK HEAD -->
       <template id="headPink">
-        <svg viewBox="0 0 220 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg
+          viewBox="0 0 220 330"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
           <g class="head">
             <g class="breath">
               <path
@@ -717,7 +876,11 @@
 
       <!-- RED HEAD -->
       <template id="headRed">
-        <svg viewBox="0 0 220 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg
+          viewBox="0 0 220 330"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
           <g class="head">
             <g class="breath">
               <path
@@ -809,8 +972,14 @@ DAY
           p.style.setProperty("--dx", Math.random() * 40 - 20 + "px");
 
           const isRed = Math.random() < 0.4;
-          p.style.setProperty("--petalA", isRed ? "rgba(255,90,90,.9)" : "rgba(255,170,210,.9)");
-          p.style.setProperty("--petalB", isRed ? "rgba(210,20,20,.9)" : "rgba(236,64,122,.9)");
+          p.style.setProperty(
+            "--petalA",
+            isRed ? "rgba(255,90,90,.9)" : "rgba(255,170,210,.9)",
+          );
+          p.style.setProperty(
+            "--petalB",
+            isRed ? "rgba(210,20,20,.9)" : "rgba(236,64,122,.9)",
+          );
           petalsIntro.appendChild(p);
         }
       }
@@ -835,7 +1004,7 @@ DAY
             bgMusic.addEventListener(
               "loadedmetadata",
               () => (bgMusic.currentTime = START_AT),
-              { once: true }
+              { once: true },
             );
           }
         }
@@ -898,11 +1067,17 @@ DAY
 
         const stemLayer = document.createElement("div");
         stemLayer.className = "roseStemLayer";
-        stemLayer.appendChild(stemTpl.content.firstElementChild.cloneNode(true));
+        stemLayer.appendChild(
+          stemTpl.content.firstElementChild.cloneNode(true),
+        );
 
         const headLayer = document.createElement("div");
         headLayer.className = "roseHeadLayer";
-        headLayer.appendChild((isRed ? headRed : headPink).content.firstElementChild.cloneNode(true));
+        headLayer.appendChild(
+          (isRed ? headRed : headPink).content.firstElementChild.cloneNode(
+            true,
+          ),
+        );
 
         wrap.appendChild(stemLayer);
         wrap.appendChild(headLayer);
@@ -933,16 +1108,37 @@ DAY
 
           p.style.left = (Math.random() * 100).toFixed(2) + "%";
           p.style.setProperty("--ps", ps);
-          p.style.setProperty("--dur", (10 + Math.random() * 10).toFixed(2) + "s");
-          p.style.setProperty("--dur2", (3.5 + Math.random() * 4.5).toFixed(2) + "s");
-          p.style.setProperty("--dur3", (2.8 + Math.random() * 4.0).toFixed(2) + "s");
-          p.style.setProperty("--delay", (-Math.random() * 12).toFixed(2) + "s");
-          p.style.setProperty("--dx", (Math.random() * 36 - 18).toFixed(1) + "px");
+          p.style.setProperty(
+            "--dur",
+            (10 + Math.random() * 10).toFixed(2) + "s",
+          );
+          p.style.setProperty(
+            "--dur2",
+            (3.5 + Math.random() * 4.5).toFixed(2) + "s",
+          );
+          p.style.setProperty(
+            "--dur3",
+            (2.8 + Math.random() * 4.0).toFixed(2) + "s",
+          );
+          p.style.setProperty(
+            "--delay",
+            (-Math.random() * 12).toFixed(2) + "s",
+          );
+          p.style.setProperty(
+            "--dx",
+            (Math.random() * 36 - 18).toFixed(1) + "px",
+          );
           p.style.opacity = (0.38 + Math.random() * 0.32).toFixed(2);
 
           const isRed = Math.random() < 0.35;
-          p.style.setProperty("--petalA", isRed ? "rgba(255,90,90,.92)" : "rgba(255,170,210,.92)");
-          p.style.setProperty("--petalB", isRed ? "rgba(210,20,20,.92)" : "rgba(236,64,122,.92)");
+          p.style.setProperty(
+            "--petalA",
+            isRed ? "rgba(255,90,90,.92)" : "rgba(255,170,210,.92)",
+          );
+          p.style.setProperty(
+            "--petalB",
+            isRed ? "rgba(210,20,20,.92)" : "rgba(236,64,122,.92)",
+          );
 
           rain.appendChild(p);
         }
@@ -965,7 +1161,7 @@ DAY
             { transform: "translateX(-50%) scale(1.06)" },
             { transform: "translateX(-50%) scale(1)" },
           ],
-          { duration: 420, easing: "ease-out" }
+          { duration: 420, easing: "ease-out" },
         );
       }
 
@@ -976,6 +1172,25 @@ DAY
           e.preventDefault();
           replay();
         }
+      });
+
+      /* ===== INDIVIDUAL FLOWER CLICK ANIMATION (ADDED) ===== */
+      roses.forEach((r) => {
+        r.addEventListener("click", (e) => {
+          // prevent bouquet click replay when clicking a flower
+          e.stopPropagation();
+
+          // restart animation every click
+          r.classList.remove("flower-pop");
+          void r.offsetWidth; // force reflow
+          r.classList.add("flower-pop");
+
+          r.addEventListener(
+            "animationend",
+            () => r.classList.remove("flower-pop"),
+            { once: true },
+          );
+        });
       });
     </script>
   </body>
