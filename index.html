@@ -316,7 +316,6 @@
         font-weight: 700;
       }
 
-      /* Falling petals (pink/red mixed) */
       .petalRain {
         position: absolute;
         inset: 0;
@@ -398,7 +397,6 @@
         }
       }
 
-      /* ===== PRO LAYERING FIX ===== */
       .roseWrap {
         position: relative;
         width: 100%;
@@ -416,7 +414,6 @@
         z-index: 2;
       }
 
-      /* Bloom */
       .stemGrow {
         transform-origin: 50% 100%;
         transform: scaleY(0.12);
@@ -519,126 +516,22 @@
         }
       }
 
-      /* ===== TOP 6 RED roses (soft V curve) ===== */
-      .red1 {
-        --x: calc(-28vmin);
-        --y: calc(-30vmin);
-        --s: 0.95;
-        --tilt: -10deg;
-        --sd: -0.2s;
-        --bloomDelay: 0s;
-        --z: 4;
-      }
-      .red2 {
-        --x: calc(-18vmin);
-        --y: calc(-34vmin);
-        --s: 0.98;
-        --tilt: 6deg;
-        --sd: -0.25s;
-        --bloomDelay: 0.2s;
-        --z: 5;
-      }
-      .red3 {
-        --x: calc(-6vmin);
-        --y: calc(-37vmin);
-        --s: 1.02;
-        --tilt: -4deg;
-        --sd: -0.2s;
-        --bloomDelay: 0.4s;
-        --z: 6;
-      }
-      .red4 {
-        --x: calc(6vmin);
-        --y: calc(-37vmin);
-        --s: 1.02;
-        --tilt: 4deg;
-        --sd: -0.2s;
-        --bloomDelay: 0.6s;
-        --z: 6;
-      }
-      .red5 {
-        --x: calc(18vmin);
-        --y: calc(-34vmin);
-        --s: 0.98;
-        --tilt: -6deg;
-        --sd: -0.25s;
-        --bloomDelay: 0.8s;
-        --z: 5;
-      }
-      .red6 {
-        --x: calc(28vmin);
-        --y: calc(-30vmin);
-        --s: 0.95;
-        --tilt: 10deg;
-        --sd: -0.2s;
-        --bloomDelay: 1s;
-        --z: 4;
-      }
+      /* ===== TOP 6 RED roses ===== */
+      .red1 { --x: calc(-28vmin); --y: calc(-30vmin); --s: 0.95; --tilt: -10deg; --sd: -0.2s; --bloomDelay: 0s; --z: 4; }
+      .red2 { --x: calc(-18vmin); --y: calc(-34vmin); --s: 0.98; --tilt: 6deg;  --sd: -0.25s; --bloomDelay: 0.2s; --z: 5; }
+      .red3 { --x: calc(-6vmin);  --y: calc(-37vmin); --s: 1.02; --tilt: -4deg; --sd: -0.2s; --bloomDelay: 0.4s; --z: 6; }
+      .red4 { --x: calc(6vmin);   --y: calc(-37vmin); --s: 1.02; --tilt: 4deg;  --sd: -0.2s; --bloomDelay: 0.6s; --z: 6; }
+      .red5 { --x: calc(18vmin);  --y: calc(-34vmin); --s: 0.98; --tilt: -6deg; --sd: -0.25s; --bloomDelay: 0.8s; --z: 5; }
+      .red6 { --x: calc(28vmin);  --y: calc(-30vmin); --s: 0.95; --tilt: 10deg; --sd: -0.2s; --bloomDelay: 1s; --z: 4; }
 
-      /* ===== 7 PINK roses (soft V bottom) ===== */
-      .r1 {
-        --x: calc(-24vmin);
-        --y: calc(-15vmin);
-        --s: 0.95;
-        --tilt: -10deg;
-        --sd: -0.2s;
-        --bloomDelay: 1.2s;
-        --z: 6;
-      }
-      .r2 {
-        --x: calc(-10vmin);
-        --y: calc(-18vmin);
-        --s: 1.05;
-        --tilt: 7deg;
-        --sd: -0.3s;
-        --bloomDelay: 1.6s;
-        --z: 12;
-      }
-      .r3 {
-        --x: calc(10vmin);
-        --y: calc(-18vmin);
-        --s: 1.05;
-        --tilt: -7deg;
-        --sd: -0.2s;
-        --bloomDelay: 2s;
-        --z: 11;
-      }
-      .r4 {
-        --x: calc(-30vmin);
-        --y: calc(-2vmin);
-        --s: 0.9;
-        --tilt: 12deg;
-        --sd: -0.2s;
-        --bloomDelay: 2.4s;
-        --z: 10;
-      }
-      .r5 {
-        --x: calc(30vmin);
-        --y: calc(-2vmin);
-        --s: 0.9;
-        --tilt: -12deg;
-        --sd: -0.2s;
-        --bloomDelay: 2.8s;
-        --z: 8;
-      }
-      .r6 {
-        --x: calc(0vmin);
-        --y: calc(5vmin);
-        --s: 1.15;
-        --tilt: 0deg;
-        --sd: -0.35s;
-        --bloomDelay: 3.2s;
-        --z: 14;
-      }
-      .r7 {
-        --x: calc(0vmin);
-        --y: calc(20vmin);
-        --s: 1.2;
-        --tilt: 0deg;
-        --sd: -0.35s;
-        --bloomDelay: 3.6s;
-        --z: 15;
-      }
+      /* ===== 7 PINK roses ===== */
+      .r1 { --x: calc(-24vmin); --y: calc(-15vmin); --s: 0.95; --tilt: -10deg; --sd: -0.2s; --bloomDelay: 1.2s; --z: 6; }
+      .r2 { --x: calc(-10vmin); --y: calc(-18vmin); --s: 1.05; --tilt: 7deg;  --sd: -0.3s; --bloomDelay: 1.6s; --z: 12; }
+      .r3 { --x: calc(10vmin);  --y: calc(-18vmin); --s: 1.05; --tilt: -7deg; --sd: -0.2s; --bloomDelay: 2s;   --z: 11; }
+      .r4 { --x: calc(-30vmin); --y: calc(-2vmin);  --s: 0.9;  --tilt: 12deg; --sd: -0.2s; --bloomDelay: 2.4s; --z: 10; }
+      .r5 { --x: calc(30vmin);  --y: calc(-2vmin);  --s: 0.9;  --tilt: -12deg;--sd: -0.2s; --bloomDelay: 2.8s; --z: 8; }
+      .r6 { --x: calc(0vmin);   --y: calc(5vmin);   --s: 1.15; --tilt: 0deg;  --sd: -0.35s;--bloomDelay: 3.2s; --z: 14; }
+      .r7 { --x: calc(0vmin);   --y: calc(20vmin);  --s: 1.2;  --tilt: 0deg;  --sd: -0.35s;--bloomDelay: 3.6s; --z: 15; }
 
       .caption {
         position: absolute;
@@ -687,35 +580,23 @@
   <body>
     <div class="fade-layer" id="fadeLayer"></div>
 
-    <!-- MUSIC (NO UI, LOOP FOREVER) -->
-    <audio
-      id="bgMusic"
-      src="./Taylor Swift - Lover.mp3"
-      preload="auto"
-      loop
-      playsinline
-    ></audio>
+    <!-- MUSIC (NO UI) -->
+    <audio id="bgMusic" src="./lover.mp3" preload="auto" playsinline></audio>
 
-    <!-- =======================
-         PAGE 1: INTRO
-    ======================== -->
+    <!-- PAGE 1 -->
     <section class="page active" id="pageIntro" aria-label="Intro">
       <div class="sceneIntro">
         <div class="petalsIntro" id="petalsIntro"></div>
 
         <div class="card" id="openBouquet">
           <h1 class="heroTitle" id="heroTitle"></h1>
-
           <p class="sub">A little surprise is waiting for you 💗</p>
-
           <div class="pill">Tap / Click anywhere to open the bouquet</div>
         </div>
       </div>
     </section>
 
-    <!-- =======================
-         PAGE 2: FLOWER
-    ======================== -->
+    <!-- PAGE 2 -->
     <section class="page" id="pageFlower" aria-label="Bouquet">
       <div class="bokeh"></div>
 
@@ -723,22 +604,11 @@
         <div class="ground"></div>
         <div class="petalRain" id="petalRain" aria-hidden="true"></div>
 
-        <div
-          class="hint"
-          id="replayBtn"
-          role="button"
-          tabindex="0"
-          aria-label="Replay bloom animation"
-        >
+        <div class="hint" id="replayBtn" role="button" tabindex="0">
           Tap the bouquet to <b>replay bloom</b> ✨🫶
         </div>
 
-        <div
-          class="bouquet"
-          id="bouquet"
-          aria-label="Bouquet of 13 blooming roses (6 red + 7 pink)"
-        >
-          <!-- 6 RED -->
+        <div class="bouquet" id="bouquet">
           <div class="roseUnit red1" data-color="red"></div>
           <div class="roseUnit red2" data-color="red"></div>
           <div class="roseUnit red3" data-color="red"></div>
@@ -746,7 +616,6 @@
           <div class="roseUnit red5" data-color="red"></div>
           <div class="roseUnit red6" data-color="red"></div>
 
-          <!-- 7 PINK -->
           <div class="roseUnit r1" data-color="pink"></div>
           <div class="roseUnit r2" data-color="pink"></div>
           <div class="roseUnit r3" data-color="pink"></div>
@@ -757,18 +626,13 @@
         </div>
 
         <div class="caption">
-          Happy Valentine's Day
-          <span>• Katrina Selomin • February 14, 2026</span>
+          Happy Valentine's Day <span>• Katrina Selomin • February 14, 2026</span>
         </div>
       </div>
 
-      <!-- STEM+LEAVES template (shared by both colors) -->
+      <!-- STEM+LEAVES -->
       <template id="roseStem">
-        <svg
-          viewBox="0 0 220 330"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
+        <svg viewBox="0 0 220 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <g class="stemGrow">
             <path
               d="M112 312 C110 270, 114 235, 114 200 C114 160, 116 132, 114 110"
@@ -791,13 +655,9 @@
         </svg>
       </template>
 
-      <!-- PINK HEAD template -->
+      <!-- PINK HEAD -->
       <template id="headPink">
-        <svg
-          viewBox="0 0 220 330"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
+        <svg viewBox="0 0 220 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <g class="head">
             <g class="breath">
               <path
@@ -823,7 +683,6 @@
                    C120 128, 128 124, 138 114 C150 102, 154 86, 148 70 C142 54, 128 44, 110 44Z"
                 fill="var(--p1)"
               />
-
               <g class="innerOpen">
                 <path
                   d="M110 56 C96 56, 86 64, 84 76 C82 90, 90 102, 102 106 C106 108, 114 108, 118 106
@@ -854,13 +713,9 @@
         </svg>
       </template>
 
-      <!-- RED HEAD template -->
+      <!-- RED HEAD -->
       <template id="headRed">
-        <svg
-          viewBox="0 0 220 330"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
+        <svg viewBox="0 0 220 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <g class="head">
             <g class="breath">
               <path
@@ -886,7 +741,6 @@
                    C120 128, 128 124, 138 114 C150 102, 154 86, 148 70 C142 54, 128 44, 110 44Z"
                 fill="var(--rd1)"
               />
-
               <g class="innerOpen">
                 <path
                   d="M110 56 C96 56, 86 64, 84 76 C82 90, 90 102, 102 106 C106 108, 114 108, 118 106
@@ -919,21 +773,18 @@
     </section>
 
     <script>
-      /* =========================
-         INTRO TITLE (same logic)
-      ========================== */
+      /* INTRO TITLE */
       const heroTitle = document.getElementById("heroTitle");
-
       function buildTitle() {
         heroTitle.innerHTML = "";
         const isMobile = window.matchMedia("(max-width:520px)").matches;
 
         if (isMobile) {
           heroTitle.innerHTML = `
-      HAPPY<br>
-      VALENTINE'S<br>
-      DAY
-    `;
+HAPPY<br>
+VALENTINE'S<br>
+DAY
+`;
         } else {
           heroTitle.innerHTML = "HAPPY VALENTINE'S DAY KATWINA";
         }
@@ -941,9 +792,7 @@
       buildTitle();
       window.addEventListener("resize", buildTitle);
 
-      /* =========================
-         INTRO PETALS
-      ========================== */
+      /* INTRO PETALS */
       const petalsIntro = document.getElementById("petalsIntro");
       function makeIntroPetals() {
         petalsIntro.innerHTML = "";
@@ -958,49 +807,33 @@
           p.style.setProperty("--dx", Math.random() * 40 - 20 + "px");
 
           const isRed = Math.random() < 0.4;
-          p.style.setProperty(
-            "--petalA",
-            isRed ? "rgba(255,90,90,.9)" : "rgba(255,170,210,.9)",
-          );
-          p.style.setProperty(
-            "--petalB",
-            isRed ? "rgba(210,20,20,.9)" : "rgba(236,64,122,.9)",
-          );
-
+          p.style.setProperty("--petalA", isRed ? "rgba(255,90,90,.9)" : "rgba(255,170,210,.9)");
+          p.style.setProperty("--petalB", isRed ? "rgba(210,20,20,.9)" : "rgba(236,64,122,.9)");
           petalsIntro.appendChild(p);
         }
       }
       makeIntroPetals();
 
-      /* =========================
-         MUSIC (NO OFF OPTION)
-      ========================== */
+      /* MUSIC (start at timestamp, then loop to 0) */
       const bgMusic = document.getElementById("bgMusic");
 
       function startMusic() {
         if (!bgMusic) return;
 
-        // choose where to start (in seconds)
-        const START_AT = 42; // <-- change this (e.g. 10 = 00:10, 75 = 01:15)
-
-        // only do the skip the first time we start music
+        const START_AT = 42; // change this
         const firstStart = bgMusic.paused && bgMusic.currentTime === 0;
 
         bgMusic.volume = 1;
-        bgMusic.loop = false; // IMPORTANT: we handle looping ourselves
+        bgMusic.loop = false; // we handle looping manually
 
-        // If user wants a skip at the start:
         if (firstStart) {
-          // Some browsers need metadata loaded before setting currentTime
           if (bgMusic.readyState >= 1) {
             bgMusic.currentTime = START_AT;
           } else {
             bgMusic.addEventListener(
               "loadedmetadata",
-              () => {
-                bgMusic.currentTime = START_AT;
-              },
-              { once: true },
+              () => (bgMusic.currentTime = START_AT),
+              { once: true }
             );
           }
         }
@@ -1009,23 +842,24 @@
         if (p && typeof p.catch === "function") p.catch(() => {});
       }
 
-      // When the song ends, go back to the very beginning (0:00) and play again
       bgMusic.addEventListener("ended", () => {
         bgMusic.currentTime = 0;
         const p = bgMusic.play();
         if (p && typeof p.catch === "function") p.catch(() => {});
       });
 
-      /* =========================
-         PAGE SWITCH (NO NAVIGATION)
-      ========================== */
+      /* PAGE SWITCH */
       const fadeLayer = document.getElementById("fadeLayer");
       const pageIntro = document.getElementById("pageIntro");
       const pageFlower = document.getElementById("pageFlower");
       const openBouquet = document.getElementById("openBouquet");
 
+      let opened = false;
+
       function showFlowerSmooth() {
-        // Start music on user gesture, then it loops forever on this page
+        if (opened) return; // prevent double trigger
+        opened = true;
+
         startMusic();
 
         fadeLayer.classList.add("show");
@@ -1034,7 +868,6 @@
           pageIntro.classList.remove("active");
           pageFlower.classList.add("active");
 
-          // start / rebuild flower visuals fresh
           injectAll();
           makePetals();
 
@@ -1042,11 +875,16 @@
         }, 520);
       }
 
-      openBouquet.addEventListener("click", showFlowerSmooth);
+      // CLICK ANYWHERE on intro:
+      pageIntro.addEventListener("click", showFlowerSmooth);
 
-      /* =========================
-         FLOWER BUILD (same code)
-      ========================== */
+      // Card click should not double-trigger
+      openBouquet.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showFlowerSmooth();
+      });
+
+      /* FLOWER BUILD */
       const roses = document.querySelectorAll(".roseUnit");
       const stemTpl = document.getElementById("roseStem");
       const headPink = document.getElementById("headPink");
@@ -1058,17 +896,11 @@
 
         const stemLayer = document.createElement("div");
         stemLayer.className = "roseStemLayer";
-        stemLayer.appendChild(
-          stemTpl.content.firstElementChild.cloneNode(true),
-        );
+        stemLayer.appendChild(stemTpl.content.firstElementChild.cloneNode(true));
 
         const headLayer = document.createElement("div");
         headLayer.className = "roseHeadLayer";
-        headLayer.appendChild(
-          (isRed ? headRed : headPink).content.firstElementChild.cloneNode(
-            true,
-          ),
-        );
+        headLayer.appendChild((isRed ? headRed : headPink).content.firstElementChild.cloneNode(true));
 
         wrap.appendChild(stemLayer);
         wrap.appendChild(headLayer);
@@ -1083,7 +915,6 @@
         });
       }
 
-      // Falling petals (Flower)
       const rain = document.getElementById("petalRain");
       function makePetals() {
         rain.innerHTML = "";
@@ -1100,37 +931,16 @@
 
           p.style.left = (Math.random() * 100).toFixed(2) + "%";
           p.style.setProperty("--ps", ps);
-          p.style.setProperty(
-            "--dur",
-            (10 + Math.random() * 10).toFixed(2) + "s",
-          );
-          p.style.setProperty(
-            "--dur2",
-            (3.5 + Math.random() * 4.5).toFixed(2) + "s",
-          );
-          p.style.setProperty(
-            "--dur3",
-            (2.8 + Math.random() * 4.0).toFixed(2) + "s",
-          );
-          p.style.setProperty(
-            "--delay",
-            (-Math.random() * 12).toFixed(2) + "s",
-          );
-          p.style.setProperty(
-            "--dx",
-            (Math.random() * 36 - 18).toFixed(1) + "px",
-          );
+          p.style.setProperty("--dur", (10 + Math.random() * 10).toFixed(2) + "s");
+          p.style.setProperty("--dur2", (3.5 + Math.random() * 4.5).toFixed(2) + "s");
+          p.style.setProperty("--dur3", (2.8 + Math.random() * 4.0).toFixed(2) + "s");
+          p.style.setProperty("--delay", (-Math.random() * 12).toFixed(2) + "s");
+          p.style.setProperty("--dx", (Math.random() * 36 - 18).toFixed(1) + "px");
           p.style.opacity = (0.38 + Math.random() * 0.32).toFixed(2);
 
           const isRed = Math.random() < 0.35;
-          p.style.setProperty(
-            "--petalA",
-            isRed ? "rgba(255,90,90,.92)" : "rgba(255,170,210,.92)",
-          );
-          p.style.setProperty(
-            "--petalB",
-            isRed ? "rgba(210,20,20,.92)" : "rgba(236,64,122,.92)",
-          );
+          p.style.setProperty("--petalA", isRed ? "rgba(255,90,90,.92)" : "rgba(255,170,210,.92)");
+          p.style.setProperty("--petalB", isRed ? "rgba(210,20,20,.92)" : "rgba(236,64,122,.92)");
 
           rain.appendChild(p);
         }
@@ -1140,9 +950,7 @@
         if (pageFlower.classList.contains("active")) makePetals();
       });
 
-      /* =========================
-         FLOWER REPLAY (same logic)
-      ========================== */
+      /* REPLAY BLOOM */
       const bouquet = document.getElementById("bouquet");
       const replayBtn = document.getElementById("replayBtn");
 
@@ -1155,7 +963,7 @@
             { transform: "translateX(-50%) scale(1.06)" },
             { transform: "translateX(-50%) scale(1)" },
           ],
-          { duration: 420, easing: "ease-out" },
+          { duration: 420, easing: "ease-out" }
         );
       }
 
